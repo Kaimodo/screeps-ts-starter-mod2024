@@ -1,0 +1,17 @@
+[**screeps-ts-starter-mod2024 v1.0.0**](../../../README.md) • **Docs**
+
+***
+
+[screeps-ts-starter-mod2024 v1.0.0](../../../modules.md) / [utils/emoji](../README.md) / Splash
+
+# Function: Splash()
+
+> **Splash**(): `void`
+
+## Returns
+
+`void`
+
+## Defined in
+
+utils/emoji.ts:53

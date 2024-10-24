@@ -1,43 +1,98 @@
+const startCpu = Game.cpu.getUsed();
 import { ErrorMapper } from "utils/ErrorMapper";
+import * as Inscribe from "screeps-inscribe";
+import * as config from "config";
+import { log } from "./utils/logger/logger";
+import * as utils from "./utils/utils";
+import { Emoji, Splash } from "./utils/emoji";
+import * as Profiler from "screeps-profiler";
+import { ConsoleCommands } from "utils/consolecommands";
+import { StatsManager } from "./utils/stats";
 
-declare global {
-  /*
-    Example types, expand on these or remove them and add your own.
-    Note: Values, properties defined here do no fully *exist* by this type definiton alone.
-          You must also give them an implemention if you would like to use them. (ex. actually setting a `role` property in a Creeps memory)
+import roleHarvester from "./role.harvester";
+import roleBuilder from "./role.builder";
+import roleUpgrader from "./role.upgrader";
+import structureTower from "./structure.tower";
+import spawnCreeps from "./spawn.creep";
 
-    Types added in this `global` block are in an ambient, global context. This is needed because `main.ts` is a module file (uses import or export).
-    Interfaces matching on name from @types/screeps will be merged. This is how you can extend the 'built-in' interfaces from @types/screeps.
-  */
-  // Memory extension samples
-  interface Memory {
-    uuid: number;
-    log: any;
-  }
+// New Script loaded
+console.log(`New Script loaded ${Emoji.reload}`);
+Splash();
 
-  interface CreepMemory {
-    role: string;
-    room: string;
-    working: boolean;
-  }
-
-  // Syntax for adding proprties to `global` (ex "global.log")
-  namespace NodeJS {
-    interface Global {
-      log: any;
-    }
-  }
+if (config.USE_PROFILER) {
+  console.log(`[${Inscribe.color("Profiler: ", "skyblue") + config.USE_PROFILER}]`);
+  Profiler.enable();
 }
+
+// Clear Memory
+if (!Memory.version || Memory.version !== config.TARGET_MEM_VERSION) {
+  const memOld = Memory.version;
+  Memory.version = config.TARGET_MEM_VERSION;
+  log.info("Memory: " + memOld + " / " + Memory.version + " / " + config.TARGET_MEM_VERSION);
+  utils.clearMemory();
+}
+
+// Get Script loading time
+const elapsedCPU = Game.cpu.getUsed() - startCpu;
+console.log(`[${Inscribe.color("Script Loading needed: ", "skyblue") + elapsedCPU.toFixed(2) + " Ticks"}]`);
 
 // When compiling TS to JS and bundling with rollup, the line numbers and file names in error messages change
 // This utility uses source maps to get the line numbers and file names of the original, TS source code
 export const loop = ErrorMapper.wrapLoop(() => {
+  /*
   console.log(`Current game tick is ${Game.time}`);
+  log.debug("db");
+  log.warning("warn");
+  log.info("inf");
+  log.error("err");
+  */
 
-  // Automatically delete memory of missing creeps
-  for (const name in Memory.creeps) {
-    if (!(name in Game.creeps)) {
-      delete Memory.creeps[name];
+  global.cc = ConsoleCommands;
+  // Main Loop here:
+  if (!Memory.uuid || Memory.uuid > 1000) {
+    Memory.uuid = 0;
+  }
+
+  const myStructureKeys = Object.keys(Game.structures);
+  const myStructures: Structure<StructureConstant>[] = myStructureKeys.map(key => Game.structures[key]);
+
+  const spawns: StructureSpawn[] = [];
+  const towers: StructureTower[] = [];
+
+  for (const struct of myStructures) {
+    if (struct.structureType === STRUCTURE_SPAWN) {
+      spawns.push(struct as StructureSpawn);
+    }
+    if (struct.structureType === STRUCTURE_TOWER) {
+      towers.push(struct as StructureTower);
     }
   }
+
+  spawns.forEach(spawn => {
+    spawnCreeps.spawn(spawn);
+  });
+  structureTower.run(towers);
+
+  for (const name in Game.creeps) {
+    const creep = Game.creeps[name];
+    if (creep.memory.role === "harvester") {
+      roleHarvester.run(creep);
+    }
+    if (creep.memory.role === "builder") {
+      roleBuilder.run(creep);
+    }
+    if (creep.memory.role == "upgrader") {
+      roleUpgrader.run(creep);
+    }
+  }
+  utils.ClearNonExistingCreeMemory();
+  utils.log_info();
+  StatsManager.runForAllRooms();
 });
+
+/*
+functionName {}
+Profiler.registerFN(functionName, 'BESCHREIBUNG');
+Profiler.registerFN(run, 'run(Creep)');
+cConsole: Game.profiler.profile(1000)
+*/

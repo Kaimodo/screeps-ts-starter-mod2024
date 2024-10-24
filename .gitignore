@@ -18,6 +18,15 @@
 # Screeps Config
 screeps.json
 
+# SVG-Files
+*.svg
+
+#ScreepsVisual
+Screeps-Visual.html
+
+#Debug-Changelog data
+changelog-data.json
+
 # ScreepsServer data from integration tests
 /server
 
