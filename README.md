@@ -8,6 +8,10 @@
 
 - Logger from ([resir014](https://github.com/resir014/Stonehenge))
 
+- screeps-cartographer from ([glitchassassin](https://github.com/glitchassassin/screeps-cartographer))
+
+- creep-tasks from ([bencbartlett](https://github.com/bencbartlett/creep-tasks))
+
 - JS2FlowChart from ([Bogdan-Lyashenko](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart))
 
 - Rollup-plugin Visualizer from ([btd](https://github.com/btd/rollup-plugin-visualizer))

@@ -1,8 +1,8 @@
-[**screeps-ts-starter-mod2024 v1.0.0**](../README.md) • **Docs**
+[**screeps-ts-starter-mod2024 v1.1.0**](../README.md) • **Docs**
 
 ***
 
-[screeps-ts-starter-mod2024 v1.0.0](../modules.md) / memory.creeps
+[screeps-ts-starter-mod2024 v1.1.0](../modules.md) / memory.creeps
 
 # memory.creeps
 
@@ -10,4 +10,4 @@
 
 ### Enumerations
 
-- [default](enumerations/default.md)
+- [MemoryRole](enumerations/MemoryRole.md)

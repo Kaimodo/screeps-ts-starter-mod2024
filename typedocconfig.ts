@@ -9,8 +9,8 @@ module.exports = {
   readme: "README.md",
   name: "screeps-ts-starter-mod2024",
   includeVersion: true,
-  //theme: "markdown",
-  plugin: ["typedoc-plugin-markdown"],
+  plugin: ["typedoc-plugin-markdown", "typedoc-plugin-merge-modules"],
+  mergeModulesMergeMode: "module",
   hideGenerator: true,
   validation: {
     invalidLink: true

@@ -1,8 +1,8 @@
-[**screeps-ts-starter-mod2024 v1.0.0**](../../../README.md) • **Docs**
+[**screeps-ts-starter-mod2024 v1.1.0**](../../../README.md) • **Docs**
 
 ***
 
-[screeps-ts-starter-mod2024 v1.0.0](../../../modules.md) / [utils/ErrorMapper](../README.md) / ErrorMapper
+[screeps-ts-starter-mod2024 v1.1.0](../../../modules.md) / [utils/ErrorMapper](../README.md) / ErrorMapper
 
 # Class: ErrorMapper
 
@@ -28,7 +28,7 @@
 
 #### Defined in
 
-[utils/ErrorMapper.ts:16](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/4b75b9d7b38a405f19ec366bf960a8f00c878cd1/src/utils/ErrorMapper.ts#L16)
+[utils/ErrorMapper.ts:16](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/a5b73b336d65167dfd0cbe18548fc5cecc5905cf/src/utils/ErrorMapper.ts#L16)
 
 ## Accessors
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[utils/ErrorMapper.ts:7](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/4b75b9d7b38a405f19ec366bf960a8f00c878cd1/src/utils/ErrorMapper.ts#L7)
+[utils/ErrorMapper.ts:7](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/a5b73b336d65167dfd0cbe18548fc5cecc5905cf/src/utils/ErrorMapper.ts#L7)
 
 ## Methods
 
@@ -69,7 +69,7 @@ The source-mapped stack trace
 
 #### Defined in
 
-[utils/ErrorMapper.ts:27](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/4b75b9d7b38a405f19ec366bf960a8f00c878cd1/src/utils/ErrorMapper.ts#L27)
+[utils/ErrorMapper.ts:27](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/a5b73b336d65167dfd0cbe18548fc5cecc5905cf/src/utils/ErrorMapper.ts#L27)
 
 ***
 
@@ -91,4 +91,4 @@ The source-mapped stack trace
 
 #### Defined in
 
-[utils/ErrorMapper.ts:71](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/4b75b9d7b38a405f19ec366bf960a8f00c878cd1/src/utils/ErrorMapper.ts#L71)
+[utils/ErrorMapper.ts:71](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/a5b73b336d65167dfd0cbe18548fc5cecc5905cf/src/utils/ErrorMapper.ts#L71)

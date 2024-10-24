@@ -1,4 +1,4 @@
-**screeps-ts-starter-mod2024 v1.0.0** • [**Docs**](modules.md)
+**screeps-ts-starter-mod2024 v1.1.0** • [**Docs**](modules.md)
 
 ***
 

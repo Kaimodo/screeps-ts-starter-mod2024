@@ -1,8 +1,8 @@
-[**screeps-ts-starter-mod2024 v1.0.0**](../../../../README.md) • **Docs**
+[**screeps-ts-starter-mod2024 v1.1.0**](../../../../README.md) • **Docs**
 
 ***
 
-[screeps-ts-starter-mod2024 v1.0.0](../../../../modules.md) / [utils/logger/logger](../README.md) / Log
+[screeps-ts-starter-mod2024 v1.1.0](../../../../modules.md) / [utils/logger/logger](../README.md) / Log
 
 # Class: Log
 
@@ -35,7 +35,7 @@ Log
 
 #### Defined in
 
-utils/logger/logger.ts:96
+[utils/logger/logger.ts:96](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/a5b73b336d65167dfd0cbe18548fc5cecc5905cf/src/utils/logger/logger.ts#L96)
 
 ## Methods
 
@@ -53,7 +53,7 @@ utils/logger/logger.ts:96
 
 #### Defined in
 
-utils/logger/logger.ts:155
+[utils/logger/logger.ts:155](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/a5b73b336d65167dfd0cbe18548fc5cecc5905cf/src/utils/logger/logger.ts#L155)
 
 ***
 
@@ -71,7 +71,7 @@ utils/logger/logger.ts:155
 
 #### Defined in
 
-utils/logger/logger.ts:137
+[utils/logger/logger.ts:137](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/a5b73b336d65167dfd0cbe18548fc5cecc5905cf/src/utils/logger/logger.ts#L137)
 
 ***
 
@@ -89,7 +89,7 @@ utils/logger/logger.ts:137
 
 #### Defined in
 
-utils/logger/logger.ts:161
+[utils/logger/logger.ts:161](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/a5b73b336d65167dfd0cbe18548fc5cecc5905cf/src/utils/logger/logger.ts#L161)
 
 ***
 
@@ -107,7 +107,7 @@ utils/logger/logger.ts:161
 
 #### Defined in
 
-utils/logger/logger.ts:149
+[utils/logger/logger.ts:149](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/a5b73b336d65167dfd0cbe18548fc5cecc5905cf/src/utils/logger/logger.ts#L149)
 
 ***
 
@@ -127,7 +127,7 @@ utils/logger/logger.ts:149
 
 #### Defined in
 
-utils/logger/logger.ts:112
+[utils/logger/logger.ts:112](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/a5b73b336d65167dfd0cbe18548fc5cecc5905cf/src/utils/logger/logger.ts#L112)
 
 ***
 
@@ -145,7 +145,7 @@ utils/logger/logger.ts:112
 
 #### Defined in
 
-utils/logger/logger.ts:129
+[utils/logger/logger.ts:129](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/a5b73b336d65167dfd0cbe18548fc5cecc5905cf/src/utils/logger/logger.ts#L129)
 
 ***
 
@@ -163,7 +163,7 @@ utils/logger/logger.ts:129
 
 #### Defined in
 
-utils/logger/logger.ts:143
+[utils/logger/logger.ts:143](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/a5b73b336d65167dfd0cbe18548fc5cecc5905cf/src/utils/logger/logger.ts#L143)
 
 ***
 
@@ -177,4 +177,4 @@ utils/logger/logger.ts:143
 
 #### Defined in
 
-utils/logger/logger.ts:98
+[utils/logger/logger.ts:98](https://github.com/Kaimodo/screeps-ts-starter-mod2024/blob/a5b73b336d65167dfd0cbe18548fc5cecc5905cf/src/utils/logger/logger.ts#L98)
