@@ -1,9 +1,27 @@
 #
-v1.1.0
+v1.1.1
 [2024-10-24]
 
 
 
+#
+v1.1.1
+[2024-10-24]
+
+### Features
+
+*
+creep-tasks
+([`b0f7a65`](https://github.com/Kaimodo/screeps-ts-starter-mod2024/commit/b0f7a65eeec325d829d64351a5282709e3198d81))
+73-Files changed|1428-Insertions|488-Deletions
+
+
+### Little Patch
+
+*
+patch: cl
+([`a5b73b3`](https://github.com/Kaimodo/screeps-ts-starter-mod2024/commit/a5b73b336d65167dfd0cbe18548fc5cecc5905cf))
+1-Files changed|18-Insertions|1-Deletions
 #
 v1.1.0
 [2024-10-24]
