@@ -10,10 +10,18 @@ export class RoleHarvester {
       let sources = creep.room.find(FIND_SOURCES);
       let unattendedSource = _.filter(sources, source => source.targetedBy.length == 0)[0];
       if (unattendedSource) {
-        creep.task = Tasks.harvest(unattendedSource);
+        creep.task = Tasks.harvest(unattendedSource, {
+          moveOptions: {
+            visualizePathStyle: { stroke: "#ffaa00" }
+          }
+        });
         creep.say("🔄 harvest");
       } else {
-        creep.task = Tasks.harvest(sources[0]);
+        creep.task = Tasks.harvest(sources[0], {
+          moveOptions: {
+            visualizePathStyle: { stroke: "#ffaa00" }
+          }
+        });
         creep.say("🔄 harvest");
       }
     } else {

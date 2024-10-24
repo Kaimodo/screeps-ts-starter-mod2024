@@ -5,9 +5,17 @@ export class RoleUpgrader {
 
   static newTask(creep: Creep): void {
     if (creep.carry.energy > 0) {
-      creep.task = Tasks.upgrade(creep.room.controller!); // assumes creep in in room with controller
+      creep.task = Tasks.upgrade(creep.room.controller!, {
+        moveOptions: {
+          visualizePathStyle: { stroke: "#ffaa00" }
+        }
+      }); // assumes creep in in room with controller
     } else {
-      creep.task = Tasks.harvest(creep.room.find(FIND_SOURCES)[0]);
+      creep.task = Tasks.harvest(creep.room.find(FIND_SOURCES)[0], {
+        moveOptions: {
+          visualizePathStyle: { stroke: "#ffaa00" }
+        }
+      });
     }
   }
 }

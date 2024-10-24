@@ -10,8 +10,6 @@ import { ConsoleCommands } from "utils/consolecommands";
 import { StatsManager } from "./utils/stats";
 import { preTick, reconcileTraffic } from "screeps-cartographer";
 
-import Tasks from "creep-tasks";
-import "creep-tasks/prototypes";
 import { RoleHarvester } from "./roles/harvester";
 import { RoleUpgrader } from "./roles/upgrader";
 import structureTower from "./structure.tower";

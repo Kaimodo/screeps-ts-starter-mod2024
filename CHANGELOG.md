@@ -1,9 +1,21 @@
 #
-v1.1.1
+v1.1.2
 [2024-10-24]
 
 
 
+#
+v1.1.2
+[2024-10-24]
+
+
+
+### Little Patch
+
+*
+patch: changelog
+([`15eee4b`](https://github.com/Kaimodo/screeps-ts-starter-mod2024/commit/15eee4b6acc4d995b436c58256b994cd60d7f18c))
+1-Files changed|19-Insertions|1-Deletions
 #
 v1.1.1
 [2024-10-24]
