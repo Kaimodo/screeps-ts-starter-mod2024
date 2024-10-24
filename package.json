@@ -1,6 +1,6 @@
 {
   "name": "screeps-ts-starter-mod2024",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Screeps TS starter slightly modded",
   "main": "index.js",
   "//": "If you add or change the names of destinations in screeps.json, make sure you update these scripts to reflect the changes",
